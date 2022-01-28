@@ -8,7 +8,8 @@ void Registers::init(uint8_t eip) {
   this->eip = eip;
 }
 
-uint8_t Registers::get_flag(uint8_t flag) {
+uint8_t Registers::is_flag_set(uint8_t flag) {
+  // Check if flag is set
   if (this->flags & (1 << flag)) {
     return 1;
   } else {

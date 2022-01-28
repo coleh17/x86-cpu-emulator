@@ -16,5 +16,6 @@ uint8_t Memory::read_immd8(uint8_t addr) {
 }
 
 uint16_t Memory::read_immd16(uint8_t addr) {
+  // Shift 8 bytes to read next imm8 and append with previous imm8
   return this->memory[addr + 2] << 8 | read_immd8(addr);
 }
