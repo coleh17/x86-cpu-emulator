@@ -39,6 +39,8 @@ class Memory {
    */
   uint16_t read_immd16(uint8_t addr);
 
+  void load_asm_file(FILE *file);
+
 };
 
 #endif
