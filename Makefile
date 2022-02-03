@@ -1,7 +1,7 @@
 CC      = gcc
 INCLUDE = ./include
 CFLAGS  = -Wall -I$(INCLUDE)
-OBJ_FILES    = emulator.o instructions.o memory.o
+OBJ_FILES    = emulator.o instructions.o memory.o main.o
 
 emulator: $(OBJ_FILES)
 	$(CC) $(OBJ_FILES) $(CFLAGS) -o emulator
